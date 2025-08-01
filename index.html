@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal AI Bot - NDA Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Legal AI Bot - NDA Generator</h1>
+    <form id="ndaForm">
+      <input type="text" placeholder="Disclosing Party Name" id="discloser" required />
+      <input type="text" placeholder="Receiving Party Name" id="receiver" required />
+      <input type="date" id="agreementDate" required />
+      <input type="text" placeholder="Agreement Duration (e.g., 2 years)" id="duration" required />
+      <input type="text" placeholder="Purpose of Disclosure" id="purpose" required />
+      <button type="submit">Generate NDA</button>
+    </form>
+    <textarea id="output" placeholder="Your NDA will appear here..." rows="15"></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
